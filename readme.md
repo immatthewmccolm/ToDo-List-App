@@ -1,13 +1,21 @@
 # Simple To Do List App
 
-This is a practice project for a Simple To Do List App written in PHP. The application includes user authentication and allows users to save their tasks.
+Create a web-based To-Do List Application using PHP and MySQL. The application will allow users to manage tasks by adding, editing, and deleting them. Each task can have a title, description, and a completion status (pending/completed). The goal of this project is to learn about PHP forms, CRUD operations, MySQL integration, session management, and user authentication.
 
 ## Features
 
-- User authentication
-- Add, edit, and delete tasks
-- Mark tasks as complete
-- Save tasks to a database
+1. User Authentication:
+    - Users should be able to sign up, log in, and log out
+    - Use PHP sessions to manage logged-in users
+    - Each user should have their own to-do list (data should be stored per user)
+
+2. CRUD Operations for Tasks
+    - Users can create, read, update, and delete tasks.
+    - Each task will have a title, description, and completionstatus
+    - Tasks should be displayed in a list with options to edit or delete
+
+3. Mark Tasks as Complete
+    - Allow users to mark tasks as "comp;eted" by checking a box or changing a status.
 
 ## Installation
 
