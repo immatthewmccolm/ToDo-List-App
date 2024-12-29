@@ -72,15 +72,21 @@ $conn->close();
             <?php foreach ($tasks as $task): ?>
                 <tr>
                     <td class="col-9"><?php echo htmlspecialchars($task['title']); ?></td>
-                    <td class="col-2"><?php echo htmlspecialchars($task['status']); ?></td>
+                    <td class="col-2">
+                        <?php if ($task['status'] == 'Pending') { ?>
+                            <span class="badge text-bg-warning">Pending</span>
+                        <?php } else { ?>
+                            <span class="badge text-bg-success">Complete</span>
+                        <?php } ?>
+                    </td>
                     <td class="col-1">
-                        <?php if ($task['status'] == 'pending') { ?>
+                        <?php if ($task['status'] == 'Pending') { ?>
                             <a class="icon" href="backend/complete-task.php?id=<?php echo htmlspecialchars($task['id']);?>"><i class="fa-solid fa-check"></i></a>
                         <?php } else { ?>
                             <a class="icon" href="backend/uncomplete-task.php?id=<?php echo htmlspecialchars($task['id']);?>"><i class="fa-solid fa-X"></i></a>
                         <?php } ?>
                         <a class="icon" href="task-update.php?id=<?php echo htmlspecialchars($task['id']);?>&t=<?php echo htmlspecialchars($task['title']); ?>"><i class="fa-solid fa-pen"></i></a>
-                        <a class="icon" href="backend/delete-task.php?id=<?php echo htmlspecialchars($task['id']);?>"><i class="fa-solid fa-trash-can"></i></a>
+                        <a class="icon delete" href="backend/delete-task.php?id=<?php echo htmlspecialchars($task['id']);?>"><i class="fa-solid fa-trash-can"></i></a>
                     </td>
                 </tr>
             <?php endforeach; ?>

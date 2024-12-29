@@ -26,4 +26,14 @@
 .icon {
   text-decoration: none;
   margin-right: 5px !important;
+}
+
+.account-notice {
+  text-align: center;
+  font-size: 10px !important;
+  color: gray;
+}
+
+.delete {
+  color: red !important;
 }/*# sourceMappingURL=main.css.map */

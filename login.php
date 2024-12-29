@@ -40,6 +40,8 @@
         <button type="submit" class="btn btn-primary mb-3">Login</button>
     </form>
 
+    <p class="account-notice">Not got an Account? <a href="signup.php">Sign Up.</a></p>
+
     
 </section>
 

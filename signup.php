@@ -42,6 +42,8 @@
 
         <button type="submit" class="btn btn-primary mb-3">Sign Up</button>
     </form>
+
+    <p class="account-notice">Alredy got an Account? <a href="login.php">Sign In.</a></p>
 </section>
 
 <?php include_once('footer.php'); ?>
