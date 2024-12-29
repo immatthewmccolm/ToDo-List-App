@@ -1,0 +1,27 @@
+$primary: #ADF0E0;
+
+.signup-logo {
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: $primary !important;
+    border-color: $primary !important;
+    color: black;
+    border-radius: 4px;
+}
+
+.form-control {
+    border-radius: 4px;
+}
+
+.login {
+    background-image: url('../images/loginbg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-white {
+    background-color: white;
+}
