@@ -3,9 +3,8 @@
 }
 
 .btn-primary {
-  background-color: #ADF0E0 !important;
-  border-color: #ADF0E0 !important;
-  color: black;
+  background-color: #084C61 !important;
+  border-color: #084C61 !important;
   border-radius: 4px;
 }
 
@@ -22,4 +21,9 @@
 
 .bg-white {
   background-color: white;
+}
+
+.icon {
+  text-decoration: none;
+  margin-right: 5px !important;
 }/*# sourceMappingURL=main.css.map */

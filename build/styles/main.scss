@@ -1,4 +1,4 @@
-$primary: #ADF0E0;
+$primary: #084C61;
 
 .signup-logo {
     text-align: center;
@@ -7,7 +7,6 @@ $primary: #ADF0E0;
 .btn-primary {
     background-color: $primary !important;
     border-color: $primary !important;
-    color: black;
     border-radius: 4px;
 }
 
@@ -24,4 +23,9 @@ $primary: #ADF0E0;
 
 .bg-white {
     background-color: white;
+}
+
+.icon {
+    text-decoration: none;
+    margin-right: 5px !important;
 }
